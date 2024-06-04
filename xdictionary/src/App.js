@@ -22,8 +22,10 @@ function App() {
   }
   return (
     <div className="App">
+      <h1>Dictionary App</h1>
       <input type='text' value={query} onChange={(e) => setQuery(e.target.value)} />
       <button onClick={handleClick}>Search</button>
+      <h3>Definition:</h3>
       <p>{result}</p>
     </div>
   );
